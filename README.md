@@ -32,7 +32,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/briandoesdev/Unshort">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/screenshots/unshort_logo.png?raw=true" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Unshort</h3>
