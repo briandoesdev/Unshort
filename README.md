@@ -32,7 +32,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/briandoesdev/Unshort">
-    <img src="/screenshots/unshort_logo.png?raw=true" alt="Logo" height="200">
+    <img src="https://github.com/briandoesdev/Unshort/raw/main/screenshots/unshort_logo.png?raw=true" alt="Logo" height="200">
   </a>
 
 <h3 align="center">Unshort</h3>
@@ -45,7 +45,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Unshort Screen Shot](/screenshots/screenshot.png?raw=true)
+![Unshort Screen Shot](https://github.com/briandoesdev/Unshort/raw/main/screenshots/screenshot.png?raw=true)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
