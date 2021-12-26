@@ -72,7 +72,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Unshort Screen Shot][/screenshots/screenshot.png?raw=true]](/screenshots/screenshot.png?raw=true)
+![Unshort Screen Shot](/screenshots/screenshot.png?raw=true)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
