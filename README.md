@@ -72,7 +72,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Unshort Screen Shot][https://github.com/briandoesdev/Unshort]](./screenshots/screenshot.png)
+[![Unshort Screen Shot][https://github.com/briandoesdev/Unshort/blob/main/screenshots/screenshot.png?raw=true]](https://github.com/briandoesdev/Unshort)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
