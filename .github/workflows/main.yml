@@ -30,10 +30,10 @@ jobs:
           NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_KEY}}
 
       # Runs a set of commands using the runners shell
-      - name: Add NuGet Source
-        run: dotnet nuget add source --username briandoesdev --password ${{ secrets.NUGET_API_KEY }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/briandoesdev/index.json"
+      #- name: Add NuGet Source
+      #  run: dotnet nuget add source --username briandoesdev --password ${{ secrets.NUGET_API_KEY }} --store-password-in-clear-text --name github "https://api.nuget.org/v3/index.json"
       - name: Run and build package
         run: dotnet pack -c Release -o out
           
       - name: Push generated package to GitHub registry
-        run: dotnet nuget push ./out/*.nupkg --source github --skip-duplicate --no-symbols true
+        run: dotnet nuget push ./out/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate --no-symbols true
