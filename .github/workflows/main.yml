@@ -31,9 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run and build package
-        run: |
-          cd Unshort
-          dotnet pack -c Release -o out
+        run: dotnet pack -c Release -o out
           
       - name: Push generated package to GitHub registry
         run: dotnet nuget push ./Unshort/out/*.nupkg --skip-duplicate --no-symbols true
