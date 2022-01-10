@@ -22,7 +22,9 @@ namespace Unshort {
                 AllowAutoRedirect = false
             };
 
-            client = new HttpClient(handler: clientHandler);
+            client = new HttpClient(handler: clientHandler) {
+                Timeout = TimeSpan.FromSeconds(5)
+            };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(item: new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Add(name: "User-Agent", value: "nurl");
@@ -38,10 +40,18 @@ namespace Unshort {
                     Console.WriteLine(value: shortUrl);
                 }
             }
-            catch (Exception ex) {
-                Console.WriteLine(value: $"Unexpected error: {ex.Message}");
+            catch (TaskCanceledException) {
+                if (shortUrl.StartsWith("https")) {
+                    string httpShortUrl = shortUrl.Remove(4, 1);
+                    ConvertToLongUrl(httpShortUrl);
+                }
+                else {
+                    Console.WriteLine(value: $"Exception: Request timeout for {shortUrl}");
+                }
             }
-            
+            catch (Exception ex) {
+                Console.WriteLine(value: $"Unexpected exception: {ex.Message}");
+            }
         }
     }
 }
