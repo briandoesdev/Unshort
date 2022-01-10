@@ -8,6 +8,7 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>unshort</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
+    <PackageVersion>$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmmss&quot;))</PackageVersion>
   </PropertyGroup>
 
 </Project>
