@@ -1,8 +1,6 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+
+[![GPLv3 License][https://img.shields.io/github/license/briandoesdev/Unshort.svg]][https://github.com/briandoesdev/Unshort/blob/main/LICENSE]
+[![.NET][https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white]][https://dotnet.microsoft.com/en-us/]
 [![Deploy NuGet](https://github.com/briandoesdev/Unshort/actions/workflows/main.yml/badge.svg)](https://github.com/briandoesdev/Unshort/actions/workflows/main.yml)
 
 ![Unshort Logo](https://raw.githubusercontent.com/briandoesdev/Unshort/main/screenshots/unshort_logo.png)
