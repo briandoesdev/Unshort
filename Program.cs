@@ -41,9 +41,9 @@ namespace Unshort {
                 }
             }
             catch (TaskCanceledException) {
-                if (shortUrl.StartsWith("https")) {
-                    string httpShortUrl = shortUrl.Remove(4, 1);
-                    ConvertToLongUrl(httpShortUrl);
+                if (shortUrl.StartsWith(value: "https")) {
+                    string httpShortUrl = shortUrl.Remove(startIndex: 4, count: 1);
+                    ConvertToLongUrl(shortUrl: httpShortUrl);
                 }
                 else {
                     Console.WriteLine(value: $"Exception: Request timeout for {shortUrl}");
