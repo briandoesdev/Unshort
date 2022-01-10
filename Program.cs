@@ -27,7 +27,7 @@ namespace Unshort {
             };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(item: new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add(name: "User-Agent", value: "nurl");
+            client.DefaultRequestHeaders.Add(name: "User-Agent", value: "Unshort");
         }
 
         private static void ConvertToLongUrl(string shortUrl) {
