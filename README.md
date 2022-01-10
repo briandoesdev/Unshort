@@ -1,76 +1,45 @@
-<div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-<div align="center">
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-</div>
+![Unshort Logo](https://raw.githubusercontent.com/briandoesdev/Unshort/main/screenshots/unshort_logo.png)
 
+Simple CLI tool to view long form of shortened links
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/briandoesdev/Unshort">
-    <img src="https://github.com/briandoesdev/Unshort/raw/main/screenshots/unshort_logo.png?raw=true" alt="Logo" height="200">
-  </a>
+# https
 
-<h3 align="center">Unshort</h3>
-
-  <p align="center">
-    Simple CLI tool to view long form of shortened links
-  </p>
-</div>
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Unshort Screen Shot](https://github.com/briandoesdev/Unshort/raw/main/screenshots/screenshot.png?raw=true)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+![Unshort Screen Shot](https://raw.githubusercontent.com/briandoesdev/Unshort/main/screenshots/screenshot.png)
 
 ### Built With
 
 * [.NET 6](https://dotnet.microsoft.com/en-us/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
 ### Prerequisites
 
 * .NET 6.0
   ```sh
-  dotnet --version
+  dotnet --version # should be >= 6.x.x
   ```
-  Output should be 6.0.0 or greater
 
-### Installation
+### Install via NuGet
+
+1. Verify you have .NET 6
+2. Install from NuGet
+   ```sh
+   dotnet tool install --global Unshort
+   ```
+3. Verify Unshort is working
+   ```sh
+   unshort <short_url>
+   ```
+
+### Install from source
 
 1. Clone the repo
    ```sh
@@ -91,16 +60,12 @@
 5. Install tool globally on system
    ```sh
    dotnet tool install --global --add-source ./nupkg unshort
-   ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 Example 1:
 ```sh
-unshort <short url>
+unshort <short_url>
 ```
 
 Example 2:
@@ -109,22 +74,12 @@ unshort skl.sh/hai35
 output: https://www.skillshare.com/membership/checkout?utm_source=Youtube&utm_medium=paid-HalfasInteresting&utm_campaign=2020-6-HalfasInteresting-35&utm_content=cta-link&coupon=YTHALFASINTERESTING35&onboarding_tag=24,191,39,672,3&classes=1539782161,1539782161,1389209398
 ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
 ## Roadmap
 
 - [] No roadmap now
 
 See the [open issues](https://github.com/briandoesdev/Unshort/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -138,41 +93,29 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Help
 
+If you need help loading the extension you can contact me at [@briandoesdev](https://twitter.com/briandoesdev) on Twitter or most social platforms.
 
+## Authors
 
-<!-- LICENSE -->
+- [@briandoesdev](https://twitter.com/briandoesdev)
+
+## Version History
+
+- 2022.1.10.41900
+    - Handles timeouts better
+- 1.0
+    - Initial Release
+
 ## License
 
-Distributed under the GPLv3 License. See `LICENSE` for more information.
+This project is licensed under the GPLv3 License - see the LICENSE.md file for details
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Acknowledgments
 
-
-
-<!-- CONTACT -->
 ## Contact
 
-Your Name - [@briandoesdev](https://twitter.com/briandoesdev) 
+briandoesdev - [@briandoesdev](https://twitter.com/briandoesdev) 
 
 Project Link: [https://github.com/briandoesdev/Unshort](https://github.com/briandoesdev/Unshort)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/briandoesdev/Unshort.svg?style=for-the-badge
-[contributors-url]: https://github.com/briandoesdev/Unshort/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/briandoesdev/Unshort.svg?style=for-the-badge
-[forks-url]: https://github.com/briandoesdev/Unshort/network/members
-[stars-shield]: https://img.shields.io/github/stars/briandoesdev/Unshort.svg?style=for-the-badge
-[stars-url]: https://github.com/briandoesdev/Unshort/stargazers
-[issues-shield]: https://img.shields.io/github/issues/briandoesdev/Unshort.svg?style=for-the-badge
-[issues-url]: https://github.com/briandoesdev/Unshort/issues
-[license-shield]: https://img.shields.io/github/license/briandoesdev/Unshort.svg?style=for-the-badge
-[license-url]: https://github.com/briandoesdev/Unshort/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/briandoesdev
-[product-screenshot]: images/screenshot.png
