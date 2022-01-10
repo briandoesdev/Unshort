@@ -3,6 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![Deploy NuGet](https://github.com/briandoesdev/Unshort/actions/workflows/main.yml/badge.svg)](https://github.com/briandoesdev/Unshort/actions/workflows/main.yml)
 
 ![Unshort Logo](https://raw.githubusercontent.com/briandoesdev/Unshort/main/screenshots/unshort_logo.png)
 
