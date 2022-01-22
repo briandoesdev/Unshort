@@ -9,9 +9,15 @@
     <ToolCommandName>unshort</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <Authors>briandoesdev</Authors>
+    <PackageTags>url;shortener;unshorten;expand;short;form</PackageTags>
     <PackageDescription>Simple CLI tool to view long form of shortened links</PackageDescription>
     <PackageVersion>$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmmss&quot;))</PackageVersion>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/briandoesdev/Unshort</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>

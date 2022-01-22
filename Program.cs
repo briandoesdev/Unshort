@@ -49,6 +49,12 @@ namespace Unshort {
                     Console.WriteLine(value: $"Exception: Request timeout for {shortUrl}");
                 }
             }
+            catch (HttpRequestException httpEx) {
+                // not much help? https://errorcodelookup.com/?type=hresult&code=80131501
+                if (httpEx.HResult == -2146233087) {
+                    Console.WriteLine($"Invalid HTTPS certificate: {httpEx.InnerException?.Message}");
+                }
+            }
             catch (Exception ex) {
                 Console.WriteLine(value: $"Unexpected exception: {ex.Message}");
             }
